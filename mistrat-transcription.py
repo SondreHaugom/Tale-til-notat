@@ -6,7 +6,7 @@ load_dotenv()
 api_key = os.getenv("MISTRAL_API_KEY")
 if not api_key:
     raise ValueError("MISTRAL_API_KEY environment variable is not set.")
-model = "voxtral-mini-latest"
+model = "voxtral-mini-2602"
 
 client = Mistral(api_key=api_key)
 
